@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover" />
+    <title>Galeria</title>
+    <link rel="stylesheet" href="css/estils.css">
+    <script src="js/script_fotos2.js"></script>
+</head>
+
+<body>
+    <header>
+
+        <h1>Galeria</h1>
+        <img src="img/iconoMapa.png" onclick="app.canviVista()" id="vistaMapa"
+            alt="Vista del mapa">
+    </header>
+    <main>
+        <div id="contenedorMenu">
+            <select id="nomAlbums" onchange="app.agafarValor()">
+                <option value="0">--Tria el album</option>
+            </select>
+            <img src="img/eliminarCarpeta.png" onclick="app.eliminarOption()" alt="">
+        </div>
+
+        <div id="contenedorImatge">
+            <img src="img/logo.png" class="fotosAlbum" alt="" id="fotoAlbum0" onclick="app.canviClasse(0)">
+            <img src="img/logo.png" class="fotosAlbum" alt="" id="fotoAlbum1" onclick="app.canviClasse(1)">
+            <img src="img/logo.png" class="fotosAlbum" alt="" id="fotoAlbum2" onclick="app.canviClasse(2)">
+            <img src="img/logo.png" class="fotosAlbum" alt="" id="fotoAlbum3" onclick="app.canviClasse(3)">
+            <img src="img/logo.png" class="fotosAlbum" alt="" id="fotoAlbum4" onclick="app.canviClasse(4)">
+            <img src="img/logo.png" class="fotosAlbum" alt="" id="fotoAlbum5" onclick="app.canviClasse(5)">
+            <img src="img/logo.png" class="fotosAlbum" alt="" id="fotoAlbum6" onclick="app.canviClasse(6)">
+            <img src="img/logo.png" class="fotosAlbum" alt="" id="fotoAlbum7" onclick="app.canviClasse(7)">
+            <img src="img/logo.png" class="fotosAlbum" alt="" id="fotoAlbum8" onclick="app.canviClasse(8)">
+        </div>
+
+        <div id="controlDirectoris" class="controlDirectori">
+            <img src="img/eliminarFoto.png" onclick="app.borrarFotos()" alt="">
+            <img src="img/enviarFotos.png" alt="foto no disp" onclick="app.enviarFotos()">
+        </div>
+
+
+    </main>
+    <footer>
+    </footer>
+
+    <script src="cordova.js"></script>
+
+</body>
+
+</html>
